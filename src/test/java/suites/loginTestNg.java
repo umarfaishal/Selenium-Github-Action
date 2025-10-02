@@ -52,7 +52,7 @@ public class loginTestNg {
         //wait
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'is not allowed to be empty')]")));
         //assert element
-        driver.findElement(By.xpath("//*[contains(text(),'is not allowed to be empty')]")).isDisplayed();
+        //driver.findElement(By.xpath("//*[contains(text(),'is not allowed to be empty')]")).isDisplayed();
         //close chrome
         //driver.close();
 
