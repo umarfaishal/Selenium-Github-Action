@@ -43,16 +43,16 @@ public class loginTestNg {
 
         //Get Element Email & Input data
         driver.findElement(By.id("email")).sendKeys("contoh@gmail.com");
-        driver.findElement(By.id("password")).sendKeys("1234314");
+        //driver.findElement(By.id("password")).sendKeys("1234314");
 
         //click element
         driver.findElement(By.xpath("//*[contains(text(),'login')]")).click();
 
         //get error message
         //wait
-        //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'is not allowed to be empty')]")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'is not allowed to be empty')]")));
         //assert element
-        //driver.findElement(By.xpath("//*[contains(text(),'is not allowed to be empty')]")).isDisplayed();
+        driver.findElement(By.xpath("//*[contains(text(),'is not allowed to be empty')]")).isDisplayed();
         //close chrome
         //driver.close();
 
